@@ -14,7 +14,7 @@ public class Catalogo {
 		Automovil[] autos = new Automovil[nAutos];
 		Scooter[] scooters = new Scooter[nScooters];
 		
-		System.out.println("Presione 1 para vehiculos electricos y 2 para vehiculos a gasolina.");
+		System.out.print("Presione 1 para vehiculos electricos y 2 para vehiculos a gasolina.");
 		int opcion = reader.nextInt();
 		if (opcion == 1)
 			fabrica = new FabricaVehiculoElectricidad();
