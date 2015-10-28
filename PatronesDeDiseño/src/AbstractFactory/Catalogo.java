@@ -9,6 +9,7 @@ public class Catalogo {
 	
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner reader = new Scanner(System.in);
 		FabricaVehiculo fabrica;
 		Automovil[] autos = new Automovil[nAutos];
