@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-public class FabricaVehiculoGasolina implements FabricaVehiculo {
+public class FabricaVehiculoGasolina extends FabricaVehiculo {
 
 	public FabricaVehiculoGasolina() {
 		

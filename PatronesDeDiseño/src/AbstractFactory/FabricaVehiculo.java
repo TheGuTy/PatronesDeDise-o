@@ -1,8 +1,8 @@
 package AbstractFactory;
 
-public interface FabricaVehiculo {
+public abstract class FabricaVehiculo {
 
-	Automovil creaAutomovil (String modelo, String color, int potencia, double espacio);
+	public abstract Automovil creaAutomovil (String modelo, String color, int potencia, double espacio);
 	
-	Scooter creaScooter (String modelo, String color, int potencia);
+	public abstract Scooter creaScooter (String modelo, String color, int potencia);
 }

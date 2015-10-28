@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-public class FabricaVehiculoElectricidad implements FabricaVehiculo {
+public class FabricaVehiculoElectricidad extends FabricaVehiculo {
 
 	@Override
 	public Automovil creaAutomovil(String modelo, String color, int potencia, double espacio) {
