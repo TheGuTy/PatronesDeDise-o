@@ -1,3 +1,4 @@
+package State;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +10,7 @@ public class Pedido {
 	public Pedido () {
 		
 		productos = new ArrayList<Producto>();
-		estadoPedido = new PedidoEnCurso(this);
+		estadoPedido = new EstadoEnCurso(this);
 	}
 	
 	public void agregaProducto (Producto producto) {

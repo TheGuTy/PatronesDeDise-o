@@ -1,20 +1,18 @@
+package State;
 
-public class PedidoValidado extends EstadoPedido {
+public class EstadoEntregado extends EstadoPedido {
 
-	
-	public PedidoValidado (Pedido pedido) {
+	public EstadoEntregado (Pedido pedido) {
 		
 		super(pedido);
 	}
+	
 	
 	@Override
 	public void agregaProducto(Producto producto) {}
 
 	@Override
-	public void borra() {
-		
-		pedido.getProductos().clear();
-	}
+	public void borra() {}
 
 	@Override
 	public void suprimeProducto(Producto producto) {}
@@ -22,7 +20,7 @@ public class PedidoValidado extends EstadoPedido {
 	@Override
 	public EstadoPedido estadoSiguiente() {
 		
-		return new PedidoEntregado(pedido);
+		return this;
 	}
 
 }

@@ -1,7 +1,8 @@
+package State;
 
-public class PedidoEnCurso extends EstadoPedido {
+public class EstadoEnCurso extends EstadoPedido {
 
-	public PedidoEnCurso (Pedido pedido) {
+	public EstadoEnCurso (Pedido pedido) {
 		
 		super(pedido);
 	}
@@ -27,7 +28,7 @@ public class PedidoEnCurso extends EstadoPedido {
 	@Override
 	public EstadoPedido estadoSiguiente() {
 		
-		return new PedidoValidado(pedido);
+		return new EstadoValidado(pedido);
 	}
 
 }
